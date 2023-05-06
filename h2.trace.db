@@ -1,0 +1,61 @@
+2022-10-29 14:52:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema """INFORMATION_SCHEMA""" not found [90079-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.engine.Database.getSchema(Database.java:1546)
+	at org.h2.engine.SessionLocal.setCurrentSchemaName(SessionLocal.java:1303)
+	at org.h2.jdbc.JdbcConnection.setSchema(JdbcConnection.java:1755)
+	at com.dci.intellij.dbn.connection.jdbc.DBNConnectionBase.setSchema(DBNConnectionBase.java:262)
+	at com.dci.intellij.dbn.connection.jdbc.DBNConnection.setSchema(DBNConnection.java:44)
+	at com.dci.intellij.dbn.database.generic.GenericMetadataInterface.lambda$setCurrentSchema$10(GenericMetadataInterface.java:108)
+	at com.dci.intellij.dbn.common.util.Unsafe.silent(Unsafe.java:18)
+	at com.dci.intellij.dbn.database.generic.GenericMetadataInterface.setCurrentSchema(GenericMetadataInterface.java:108)
+	at com.dci.intellij.dbn.connection.ConnectionHandlerImpl.lambda$setCurrentSchema$11(ConnectionHandlerImpl.java:506)
+	at com.dci.intellij.dbn.database.DatabaseInterface.run(DatabaseInterface.java:62)
+	at com.dci.intellij.dbn.connection.ConnectionHandlerImpl.setCurrentSchema(ConnectionHandlerImpl.java:501)
+	at com.dci.intellij.dbn.connection.ConnectionHandlerImpl.getConnection(ConnectionHandlerImpl.java:494)
+	at com.dci.intellij.dbn.execution.statement.StatementExecutionManager.process(StatementExecutionManager.java:282)
+	at com.dci.intellij.dbn.execution.statement.StatementExecutionQueue.execute(StatementExecutionQueue.java:76)
+	at com.dci.intellij.dbn.execution.statement.StatementExecutionQueue.lambda$execute$0(StatementExecutionQueue.java:52)
+	at com.dci.intellij.dbn.common.thread.Progress$1.lambda$run$0(Progress.java:34)
+	at com.dci.intellij.dbn.common.util.Cancellable.run(Cancellable.java:24)
+	at com.dci.intellij.dbn.common.thread.Progress$1.lambda$run$1(Progress.java:34)
+	at com.dci.intellij.dbn.common.thread.ThreadMonitor.run(ThreadMonitor.java:43)
+	at com.dci.intellij.dbn.common.thread.Progress$1.run(Progress.java:31)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.startTask(CoreProgressManager.java:442)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.startTask(ProgressManagerImpl.java:114)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressAsynchronously$5(CoreProgressManager.java:493)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$3(ProgressRunner.java:252)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:608)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:683)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:639)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:607)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:60)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$4(ProgressRunner.java:252)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 15:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "show [*]* from customer"; SQL statement:
+show * from customer [42000-214]
+2022-10-29 15:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2022-10-29 15:49:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "show [*]* from customer"; SQL statement:
+show * from customer [42000-214]
+2022-10-29 15:49:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2022-10-29 15:50:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found (this database is empty); SQL statement:
+select * from customer [42104-214]
+2022-10-29 15:50:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]

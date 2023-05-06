@@ -1,0 +1,260 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "addBookFrame"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel1"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "Book Title"
+							"font": &Font0 new java.awt.Font( "Segoe UI Light", 0, 18 )
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 15
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "Author"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 60
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "ISBN No"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 100
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "Category"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 215
+							"height": 35
+							"width": 160
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "Department"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 295
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "Faculty"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 255
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "Number of Copies"
+							"font": #Font0
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 15
+							"y": 340
+							"width": 160
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "bookTitle"
+							"background": sfield java.awt.Color white
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 15
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "bookAuthor"
+							"background": sfield java.awt.Color white
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 55
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "bookISBN"
+							"background": sfield java.awt.Color white
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 95
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "numberOfBooks"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 1
+								value: 1
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 335
+							"width": 60
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "Edition"
+							"font": &Font1 new java.awt.Font( "Segoe UI Light", 0, 18 )
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 20
+							"y": 145
+							"height": 30
+							"width": 157
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "Shelf Number"
+							"font": #Font1
+							"horizontalAlignment": 4
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 25
+							"y": 180
+							"height": 30
+							"width": 155
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "editionTextField"
+							"background": sfield java.awt.Color white
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 135
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "shelfNumber"
+							"background": sfield java.awt.Color white
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 175
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "universityFaculty"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "Not Selected"
+								addElement( "Not Selected" )
+							}
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "universityFacultyItemStateChanged", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "populateUniversityDepartmentComboBox", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 255
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "bookLibraryCategory"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "Not Selected"
+								addElement( "Not Selected" )
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 215
+							"width": 405
+							"height": 35
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "universityDepartment"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "Not Selected"
+								addElement( "Not Selected" )
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 185
+							"y": 295
+							"width": 405
+							"height": 35
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 0
+						"height": 380
+						"width": 615
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0, 80, 80"
+						"$rowSpecs": "0"
+						"$hGap": 5
+						"$vGap": 5
+					} ) {
+						name: "buttonBar"
+						"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "okButton"
+							"text": "Add Book"
+							"focusable": false
+							"font": &Font2 new java.awt.Font( "Segoe UI", 0, 14 )
+							"background": new com.jformdesigner.model.SwingColor( "ActionButton.focusedBorderColor" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBookToDatabase", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+							"gridy": 0
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "cancelAddBookFrameButton"
+							"text": "Cancel"
+							"focusable": false
+							"font": #Font2
+							"background": new java.awt.Color( 255, 255, 255, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelAddBookAction", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+							"gridy": 0
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 613
+						"x": 0
+						"y": 375
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 615, 485 )
+		} )
+	}
+}

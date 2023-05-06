@@ -1,0 +1,417 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t:::p {comp tabbedPane3::l:::x, seq {space :::p, par l {comp panel1:::p::p, seq {comp scrollPane1:::p:145:p, space :::p, par l {comp contentLable:::p:1218:p, comp scrollPane2:::p:1190:p}}}}}, space ::13:x}}"
+			"$verticalGroup": "par l {seq l {comp tabbedPane3:::p:72:p, space :::x, par l {seq {comp contentLable:::p:28:p, space :p:12:p, comp scrollPane2:::p:546:p}, comp scrollPane1:::p:595:p}, space :p:78:p, comp panel1:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"background": new com.jformdesigner.model.SwingColor( "ColorPalette.grey15" )
+			"defaultCloseOperation": 3
+			addEvent( new FormEvent( "java.awt.event.WindowFocusListener", "windowGainedFocus", "thisWindowGainedFocus", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "contentLable"
+				"text": "Showing All Books In Library"
+				"font": new java.awt.Font( "Segoe UI Light", 1, 18 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel1"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				"background": sfield java.awt.Color white
+				"border": new javax.swing.border.LineBorder( new java.awt.Color( 247, 238, 238, 255 ), 1, false )
+				"opaque": false
+				"preferredSize": new java.awt.Dimension( 12, 3000 )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+					"opaque": true
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane3"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+				"opaque": true
+				"requestFocusEnabled": false
+				"focusable": false
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel2"
+					"maximumSize": new java.awt.Dimension( 32767, 40 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+						"text": "Add Faculty"
+						"font": &Font0 new java.awt.Font( "Segoe UI Light", 0, 14 )
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAddFacultyFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+						"text": "View Faculties"
+						"font": #Font0
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fetchAllFuculties", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 115
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button9"
+						"text": "Edit Faculty"
+						"font": #Font0
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showEditFacultyFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 235
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button13"
+						"text": "Delete Faculty"
+						"font": #Font0
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showDeleteMenuFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 340
+						"y": 0
+						"height": 35
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Faculties"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+						"text": "Add Faculty"
+						"font": &Font1 new java.awt.Font( "Segoe UI Light", 0, 14 )
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAddDepartmentFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button10"
+						"text": "View Departments"
+						"font": #Font1
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fetchAllDepartments", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 110
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button11"
+						"text": "Edit Departmrnt"
+						"font": #Font1
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showEditDepartmentFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 260
+						"y": 0
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button12"
+						"text": "Delete Department"
+						"font": #Font1
+						"focusable": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showDeleteDepartmentFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 395
+						"y": 0
+						"height": 35
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Departments"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel4"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addBookButton"
+						"text": "Add Book"
+						"focusable": false
+						"font": &Font2 new java.awt.Font( "Segoe UI Light", 0, 14 )
+						"toolTipText": "Add a new book to the library"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBook", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"y": 0
+						"width": 110
+						"height": 35
+						"x": 5
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "generateCardButton"
+						"text": "Lend Book"
+						"focusable": false
+						"font": #Font2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "generateCard", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 115
+						"y": 0
+						"width": 110
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "borrowedBookButton"
+						"text": "Borrowed Books"
+						"focusable": false
+						"font": #Font2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "borrowedBook", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 230
+						"y": 0
+						"width": 135
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "generateReportsButton2"
+						"text": "Return Book"
+						"focusable": false
+						"font": #Font2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showReturnBooksFrame", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 110
+						"height": 35
+						"x": 370
+						"y": 0
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Books"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "searchLibraryTextField"
+					"text": "Search Library...."
+					"margin": new java.awt.Insets( 0, 16, 0, 16 )
+					"minimumSize": new java.awt.Dimension( 49, 50 )
+					"preferredSize": new java.awt.Dimension( 105, 35 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "searchLibraryTextFieldFocusGained", true ) )
+					addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "searchLibraryTextFieldFocusLost", true ) )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Search"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTree" ) {
+					name: "tree1"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "LMS"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "Faculties\t"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "Departments"
+							} )
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "Books"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "Categories"
+							} )
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "Records"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "Reports"
+							} )
+						} )
+					} )
+					"requestFocusEnabled": false
+					"showsRootHandles": false
+					"focusable": false
+					"rowHeight": 25
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"alignmentX": -0.5f
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "File"
+					"font": &Font3 new java.awt.Font( "Segoe UI Light", 0, 16 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu11"
+						"text": "New"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem5"
+							"text": "Faculty"
+							"font": &Font4 new java.awt.Font( "Segoe UI Light", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAddFacultyFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem8"
+							"text": "Department"
+							"font": #Font4
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAddDepartmentFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "createNewBookMenuItem"
+							"text": "Book"
+							"font": &Font5 new java.awt.Font( "Segoe UI Light", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showCreateNewBookFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": "Book Category"
+							"font": &Font6 new java.awt.Font( "Segoe UI Light", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAddCategoryFrame", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator5"
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu10"
+						"text": "Delete"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem7"
+							"text": "Delete Faculty"
+							"font": #Font4
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showDeleteMenuFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem10"
+							"text": "Delete Department"
+							"font": #Font4
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showDeleteDepartmentFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "deleteBooksMenuItem"
+							"text": "Delete Books"
+							"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showDeleteBooksFrame", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem4"
+							"text": "Delete Category"
+							"font": #Font6
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu5"
+					"text": "Edit"
+					"font": #Font3
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "Edit Faculty"
+						"font": #Font4
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showEditFacultyFrame", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "Edit Department"
+						"font": #Font4
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showEditDepartmentFrame", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "editExistingBookMenuItem"
+						"text": "Edit Existing Book"
+						"font": #Font5
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showEditExistingBookFrame", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "Edit Category"
+						"font": #Font6
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "viewMenu"
+					"text": "View"
+					"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "View Books"
+						"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+						"mnemonic": 66
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showAllBooks", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem13"
+						"text": "View Departments"
+						"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fetchAllDepartments", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem11"
+						"text": "View Faculties"
+						"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fetchAllFuculties", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator4"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer1"
+						"minimumSize": new java.awt.Dimension( 12, 20 )
+						"maximumSize": new java.awt.Dimension( 32767, 30 )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBoxMenuItem" ) {
+						name: "fullScreenCheckBoxMenuItem"
+						"text": "Fullscreen Window"
+						"font": &Font7 new java.awt.Font( "Segoe UI Light", 0, 16 )
+						"selected": true
+					} )
+					add( new FormComponent( "javax.swing.JCheckBoxMenuItem" ) {
+						name: "minimizedScreenCheckBoxMenuItem"
+						"text": "Minimized Window"
+						"font": #Font7
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "settingsMenu"
+					"text": "Settings"
+					"font": &Font8 new java.awt.Font( "Segoe UI Light", 0, 16 )
+					"horizontalAlignment": 2
+					"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "changeUserNameMenuItem"
+						"text": "Change Username"
+						"font": #Font8
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showChangeUserName", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "changePasswordMenuItem"
+						"text": "Change Password"
+						"font": #Font8
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showChangePasswordFrame", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "reportsMenu"
+					"text": "Reports"
+					"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+					"horizontalAlignment": 2
+					"background": #Color0
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "printReportMenuItem"
+						"text": "Print report"
+						"font": new java.awt.Font( "Segoe UI Light", 0, 16 )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 1390, 730 )
+		} )
+	}
+}
